@@ -26,6 +26,10 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium --with-deps
 
+      - name: Create data directory
+        run: |
+          mkdir -p data
+
       - name: Run scraper
         env:
           PYTHONUNBUFFERED: '1'
@@ -36,13 +40,15 @@ jobs:
         run: |
           git config --global user.name 'laporca-bot'
           git config --global user.email 'bot@laporca.local'
-          git add dashboard/data.json data/propiedades.db data/geocode_cache.db data/scraper.log || true
+          git add -A dashboard/ data/ || true
+          git status
           git diff --staged --quiet || git commit -m "scrape: $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          git push || echo "Nothing to push"
 
       - name: Upload log as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: scraper-log-${{ github.run_id }}
-          path: data
+          path: data/scraper.log
+          retention-days: 30
