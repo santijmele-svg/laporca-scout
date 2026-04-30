@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Porca · Scout de Locales</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Archivo:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand__mark">×</div>
+    <div class="brand__text">
+      <h1>SCOUT DE LOCALES</h1>
+      <p class="brand__sub">LA PORCA · CARNES DE CERDO</p>
+    </div>
+  </div>
+  <div class="topbar__meta">
+    <div class="meta-block">
+      <span class="meta-block__label">ÚLTIMA ACTUALIZACIÓN</span>
+      <span class="meta-block__value" id="meta-fecha">—</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-block__label">PROPIEDADES ACTIVAS</span>
+      <span class="meta-block__value" id="meta-total">—</span>
+    </div>
+    <div class="meta-block">
+      <span class="meta-block__label">NUEVAS HOY</span>
+      <span class="meta-block__value meta-block__value--accent" id="meta-nuevas">—</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+
+  <aside class="sidebar">
+    <section class="filter-section">
+      <h2 class="section-title">FILTROS</h2>
+
+      <div class="filter-group">
+        <label class="filter-label">Zona</label>
+        <div class="chip-row" id="filter-zona"></div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label">Portal</label>
+        <div class="chip-row" id="filter-portal"></div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label">
+          Score mínimo · <span class="filter-value" id="filter-score-val">0</span>
+        </label>
+        <input type="range" id="filter-score" min="0" max="100" value="0" step="5">
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label">
+          Superficie mínima (m²) · <span class="filter-value" id="filter-sup-val">0</span>
+        </label>
+        <input type="range" id="filter-sup" min="0" max="300" value="0" step="10">
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-checkbox">
+          <input type="checkbox" id="filter-prioritarias">
+          <span>Solo prioritarias (score ≥ 40)</span>
+        </label>
+        <label class="filter-checkbox">
+          <input type="checkbox" id="filter-nuevas">
+          <span>Solo nuevas (últimas 48hs)</span>
+        </label>
+        <label class="filter-checkbox">
+          <input type="checkbox" id="filter-ocultar-descartadas" checked>
+          <span>Ocultar descartadas</span>
+        </label>
+      </div>
+
+      <button class="btn-reset" id="btn-reset">RESETEAR FILTROS</button>
+    </section>
+
+    <section class="filter-section">
+      <h2 class="section-title">FACEBOOK MARKETPLACE</h2>
+      <p class="section-note">Se revisa manualmente. Click para abrir búsqueda guardada.</p>
+      <div class="marketplace-links" id="marketplace-links"></div>
+    </section>
+
+    <section class="filter-section legend-section">
+      <h2 class="section-title">REFERENCIAS</h2>
+      <div class="legend-item"><span class="dot dot--new"></span> Nueva (≤48hs)</div>
+      <div class="legend-item"><span class="dot dot--priority"></span> Prioritaria (score ≥ 40)</div>
+      <div class="legend-item"><span class="dot dot--regular"></span> Regular</div>
+      <div class="legend-item"><span class="dot dot--saved"></span> Marcada de interés</div>
+    </section>
+  </aside>
+
+  <section class="map-section">
+    <div id="map"></div>
+    <div class="map-overlay">
+      <div class="visible-counter">
+        <span id="visible-count">0</span><span class="visible-counter__sep">/</span><span id="total-count">0</span>
+        <span class="visible-counter__label">VISIBLES</span>
+      </div>
+    </div>
+  </section>
+
+  <aside class="results-panel">
+    <div class="results-header">
+      <h2 class="section-title">RESULTADOS</h2>
+      <select id="sort-by">
+        <option value="score">Por score</option>
+        <option value="reciente">Más recientes</option>
+        <option value="precio_asc">Precio ↑</option>
+        <option value="precio_desc">Precio ↓</option>
+        <option value="superficie">Superficie</option>
+      </select>
+    </div>
+    <div class="results-list" id="results-list"></div>
+  </aside>
+
+</main>
+
+<!-- Drawer de detalle -->
+<div class="drawer" id="drawer">
+  <div class="drawer__content" id="drawer-content"></div>
+</div>
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
