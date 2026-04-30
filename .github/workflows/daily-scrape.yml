@@ -1,0 +1,48 @@
+name: Daily scrape
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: Run scraper
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          python main.py
+
+      - name: Commit results
+        run: |
+          git config --global user.name 'laporca-bot'
+          git config --global user.email 'bot@laporca.local'
+          git add dashboard/data.json data/propiedades.db data/geocode_cache.db data/scraper.log || true
+          git diff --staged --quiet || git commit -m "scrape: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Upload log as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-log-${{ github.run_id }}
+          path: data
