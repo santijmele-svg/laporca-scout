@@ -37,8 +37,8 @@ def correr():
     log = logging.getLogger("main")
     init_db()
 
-stats = {"nuevas": 0, "actualizadas": 0, "sin_cambios": 0, "descartadas_filtro": 0, "nueva": 0, "actualizada": 0}
-urls_por_portal: dict[str, set] = {}
+    stats = {"nuevas": 0, "actualizadas": 0, "sin_cambios": 0, "descartadas_filtro": 0, "nueva": 0, "actualizada": 0}
+    urls_por_portal: dict[str, set] = {}
 
     for zona in ZONAS:
         log.info(f"=== Zona: {zona['nombre']} ===")
@@ -79,7 +79,7 @@ urls_por_portal: dict[str, set] = {}
 
                 # Persistir
                 resultado = upsert_propiedad(prop)
-                stats[resultado] += 1
+                stats[resultado] = stats.get(resultado, 0) + 1
                 urls_por_portal[scraper.portal_name].add(prop["url"])
 
     # Marcar desaparecidas
