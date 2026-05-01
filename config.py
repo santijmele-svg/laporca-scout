@@ -1,105 +1,72 @@
 """
-Configuración central del scout de locales para La Porca.
-Editá acá los criterios sin tocar el resto del código.
+Configuración central del autómata.
+Editar acá: zonas, criterios, inmobiliarias.
 """
 
-# ---------- ZONAS DE BÚSQUEDA ----------
-# Cada zona tiene su nombre normalizado y los slugs/queries que usa cada portal
+# ---------- ZONAS ----------
+# Cada zona define dónde buscar y centro geográfico para fallback de geocoding
 ZONAS = [
     {
         "nombre": "Paraná",
         "provincia": "Entre Ríos",
-        "argenprop_slug": "parana",
-        "zonaprop_slug": "parana-entre-rios",
-        "ml_query": "parana entre rios",
-        "centro": (-31.7319, -60.5238),  # lat, lon para mapa
+        "centro": (-31.7319, -60.5238),
+        "slug_argenprop": "parana",
+        "slug_zonaprop": "parana-entre-rios",
+        "slug_ml": "parana",
     },
     {
         "nombre": "Oro Verde",
         "provincia": "Entre Ríos",
-        "argenprop_slug": "oro-verde",
-        "zonaprop_slug": "oro-verde-entre-rios",
-        "ml_query": "oro verde entre rios",
         "centro": (-31.8267, -60.5306),
+        "slug_argenprop": "oro-verde",
+        "slug_zonaprop": "oro-verde-entre-rios",
+        "slug_ml": "oro-verde",
     },
     {
         "nombre": "San Benito",
         "provincia": "Entre Ríos",
-        "argenprop_slug": "san-benito-entre-rios",
-        "zonaprop_slug": "san-benito-entre-rios",
-        "ml_query": "san benito entre rios",
         "centro": (-31.7833, -60.4500),
+        "slug_argenprop": "san-benito",
+        "slug_zonaprop": "san-benito-entre-rios",
+        "slug_ml": "san-benito",
     },
     {
         "nombre": "Santa Fe",
         "provincia": "Santa Fe",
-        "argenprop_slug": "santa-fe",
-        "zonaprop_slug": "santa-fe-capital",
-        "ml_query": "santa fe capital",
         "centro": (-31.6333, -60.7000),
+        "slug_argenprop": "santa-fe",
+        "slug_zonaprop": "santa-fe-santa-fe",
+        "slug_ml": "santa-fe",
     },
     {
         "nombre": "Santo Tomé",
         "provincia": "Santa Fe",
-        "argenprop_slug": "santo-tome-santa-fe",
-        "zonaprop_slug": "santo-tome-santa-fe",
-        "ml_query": "santo tome santa fe",
         "centro": (-31.6667, -60.7667),
+        "slug_argenprop": "santo-tome",
+        "slug_zonaprop": "santo-tome-santa-fe",
+        "slug_ml": "santo-tome",
     },
 ]
 
-# ---------- CRITERIOS DUROS (filtros automáticos) ----------
-CRITERIOS_DUROS = {
-    "tipo": "local_comercial",      # solo locales en alquiler
-    "operacion": "alquiler",
-    "superficie_min_m2": 80,
-    "superficie_max_m2": 150,
-    "una_planta": True,             # se infiere por descripción
-}
+# ---------- CRITERIOS DUROS (filtros que descartan) ----------
+# Si una propiedad NO cumple esto, se descarta automáticamente
+SUPERFICIE_MIN = 80     # m² mínimo (criterio La Porca)
+SUPERFICIE_MAX = 225    # m² máximo (con tolerancia sobre los 150 ideales)
 
-# ---------- CRITERIOS BLANDOS (scoring 0-100) ----------
-# Cada uno suma puntos si la descripción del aviso lo menciona
+# ---------- CRITERIOS BLANDOS (suman puntos al score) ----------
+# Cada keyword que matchea suma sus puntos
 CRITERIOS_BLANDOS = {
-    "esquina": {
-        "peso": 20,
-        "keywords": ["esquina", "ochava", "doble frente"],
-    },
-    "frente_amplio": {
-        "peso": 15,
-        "keywords": ["6 mts de frente", "6m de frente", "amplio frente",
-                     "7 mts de frente", "8 mts de frente", "gran frente",
-                     "frente vidriado"],
-    },
-    "estacionamiento": {
-        "peso": 10,
-        "keywords": ["estacionamiento", "cochera", "playa de estacionamiento",
-                     "espacio para estacionar"],
-    },
-    "alta_circulacion": {
-        "peso": 15,
-        "keywords": ["alta circulación", "muy transitada", "zona comercial",
-                     "avenida", "peatonal", "céntrico", "centro comercial"],
-    },
-    "trifasica": {
-        "peso": 10,
-        "keywords": ["trifásica", "trifasica", "luz industrial", "380v",
-                     "fuerza motriz"],
-    },
-    "apto_alimentos": {
-        "peso": 15,
-        "keywords": ["apto gastronomía", "apto alimentos", "habilitación gastronómica",
-                     "carnicería", "rotisería", "fiambrería", "cámara",
-                     "desagüe industrial", "agua caliente"],
-    },
-    "buena_visibilidad": {
-        "peso": 15,
-        "keywords": ["vidriera", "gran vidriera", "muy visible", "excelente ubicación",
-                     "ubicación estratégica", "alta exposición"],
-    },
+    "esquina": {"keywords": ["esquina", "ochava"], "puntos": 20},
+    "buena_visibilidad": {"keywords": ["vidriera", "ventanal", "ventana grande"], "puntos": 15},
+    "frente_amplio": {"keywords": ["6 mts de frente", "6m de frente", "frente amplio", "doble frente", "7 mts de frente", "8 mts de frente"], "puntos": 15},
+    "alta_circulacion": {"keywords": ["alta circulación", "muy transitada", "avenida principal", "sobre avenida", "sobre av", "zona comercial"], "puntos": 10},
+    "estacionamiento": {"keywords": ["estacionamiento", "cochera", "playa de estacionamiento"], "puntos": 5},
+    "trifasica": {"keywords": ["trifásica", "trifasica", "380v", "380 v"], "puntos": 10},
+    "apto_alimentos": {"keywords": ["apto alimentos", "apto gastronomía", "carnicería", "rotisería", "fiambrería", "supermercado"], "puntos": 15},
+    "superficie_ideal": {"keywords": [], "puntos": 10},  # se asigna por código si está entre 90-130m²
 }
 
-# Las propiedades con score >= UMBRAL_INTERES van marcadas como "prioritarias"
-UMBRAL_INTERES = 40
+UMBRAL_INTERES = 40  # Score a partir del cual una propiedad se marca como prioritaria
 
 # ---------- KEYWORDS DE EXCLUSIÓN ----------
 # Si la descripción contiene esto, se descarta (rompe el req "una sola planta")
@@ -142,11 +109,11 @@ INMOBILIARIAS_LOCALES = [
     {"nombre": "Florencio Bogado", "url": "https://www.florenciobogado.com.ar", "zonas": ["Paraná"]},
     {"nombre": "Inmobiliaria Paraná", "url": "https://www.inmobiliariaparana.com.ar", "zonas": ["Paraná"]},
 
-    # --- SANTA FE CAPITAL Y SANTO TOMÉ ---
+    # --- SANTA FE CAPITAL ---
     {"nombre": "Demichelis & Biasoni", "url": "https://www.demichelisbiasoni.com", "zonas": ["Santa Fe", "Santo Tomé"]},
     {"nombre": "Salas Inmobiliaria", "url": "https://www.salasinmobiliaria.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "Anabel Inmobiliaria", "url": "https://www.anabelinmobiliaria.com.ar", "zonas": ["Santa Fe", "Santo Tomé"]},
-    {"nombre": "Christen Inmobiliaria", "url": "https://www.christeninmobiliaria.com.ar", "zonas": ["Santa Fe"]},
+    {"nombre": "Christen Inmobiliaria", "url": "https://www.christen.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "Coldwell Banker Iovaldi", "url": "https://www.coldwellbanker.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "RE/MAX Faro", "url": "https://www.remax.com.ar/oficina/remax-faro", "zonas": ["Santa Fe"]},
     {"nombre": "RE/MAX Futuro", "url": "https://www.remax.com.ar/oficina/remax-futuro", "zonas": ["Santa Fe"]},
@@ -154,10 +121,25 @@ INMOBILIARIAS_LOCALES = [
     {"nombre": "RE/MAX Impulso", "url": "https://www.remax.com.ar/oficina/remax-impulso", "zonas": ["Santa Fe"]},
     {"nombre": "Migone", "url": "https://migoneinmobiliaria.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "Tomas Inmobiliaria", "url": "https://inmobiliariatomas.com.ar", "zonas": ["Santa Fe", "Santo Tomé"]},
-    {"nombre": "Loquet", "url": "https://www.loquetinmobiliaria.com.ar", "zonas": ["Santo Tomé"]},
     {"nombre": "Raíces Inmobiliaria", "url": "https://www.raicesinmobiliaria.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "Imperio Servicios Inmobiliarios", "url": "https://www.imperiosi.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "CF Propiedades", "url": "https://www.cfpropiedades.com.ar", "zonas": ["Santa Fe"]},
+    {"nombre": "Orcu", "url": "https://www.orcuinmobiliaria.com.ar", "zonas": ["Santa Fe"]},
+    {"nombre": "Guastavino e Imbert", "url": "https://guastavinoeimbert.com.ar", "zonas": ["Santa Fe"]},
+    {"nombre": "Sauce", "url": "https://www.sauce.com.ar", "zonas": ["Santa Fe"]},
+    {"nombre": "Lenarduzzi", "url": "https://lenarduzzi.com.ar", "zonas": ["Santa Fe"]},
+    {"nombre": "Benuzzi", "url": "https://benuzzi.com", "zonas": ["Santa Fe"]},
+    {"nombre": "Ureta Cortés", "url": "https://uretacortes.com.ar", "zonas": ["Santa Fe"]},
+    {"nombre": "Pilay", "url": "https://www.pilayinmobiliaria.com", "zonas": ["Santa Fe"]},
+
+    # --- SANTO TOMÉ ---
+    {"nombre": "Loquet", "url": "https://www.loquetinmobiliaria.com.ar", "zonas": ["Santo Tomé"]},
+    {"nombre": "Santo Tomé Propiedades", "url": "https://santotomeprop.com.ar", "zonas": ["Santo Tomé"]},
+    {"nombre": "APL Inmobiliaria", "url": "https://www.aplinmobiliaria.com", "zonas": ["Santo Tomé"]},
+    {"nombre": "Inmobiliaria Abraham", "url": "https://inmobiliariaabraham.com.ar", "zonas": ["Santo Tomé"]},
+    {"nombre": "Danisa Robledo Propiedades", "url": "https://danisarobledopropiedades.com.ar", "zonas": ["Santo Tomé"]},
+    {"nombre": "Cometto Inmobiliaria", "url": "https://www.comettoinmobiliaria.com.ar", "zonas": ["Santo Tomé"]},
+    {"nombre": "Questa Inmobiliaria", "url": "https://questainmobiliaria.com.ar", "zonas": ["Santo Tomé"]},
 ]
 
 # ---------- FACEBOOK MARKETPLACE (búsquedas guardadas) ----------
