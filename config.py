@@ -10,53 +10,49 @@ ZONAS = [
         "nombre": "Paraná",
         "provincia": "Entre Ríos",
         "centro": (-31.7319, -60.5238),
-        "slug_argenprop": "parana",
-        "slug_zonaprop": "parana-entre-rios",
-        "slug_ml": "parana",
+        "argenprop_slug": "parana",
+        "zonaprop_slug": "parana-entre-rios",
+        "ml_query": "parana",
     },
     {
         "nombre": "Oro Verde",
         "provincia": "Entre Ríos",
         "centro": (-31.8267, -60.5306),
-        "slug_argenprop": "oro-verde",
-        "slug_zonaprop": "oro-verde-entre-rios",
-        "slug_ml": "oro-verde",
+        "argenprop_slug": "oro-verde",
+        "zonaprop_slug": "oro-verde-entre-rios",
+        "ml_query": "oro-verde",
     },
     {
         "nombre": "San Benito",
         "provincia": "Entre Ríos",
         "centro": (-31.7833, -60.4500),
-        "slug_argenprop": "san-benito",
-        "slug_zonaprop": "san-benito-entre-rios",
-        "slug_ml": "san-benito",
+        "argenprop_slug": "san-benito",
+        "zonaprop_slug": "san-benito-entre-rios",
+        "ml_query": "san-benito",
     },
     {
         "nombre": "Santa Fe",
         "provincia": "Santa Fe",
         "centro": (-31.6333, -60.7000),
-        "slug_argenprop": "santa-fe",
-        "slug_zonaprop": "santa-fe-santa-fe",
-        "slug_ml": "santa-fe",
+        "argenprop_slug": "santa-fe",
+        "zonaprop_slug": "santa-fe-santa-fe",
+        "ml_query": "santa-fe",
     },
     {
         "nombre": "Santo Tomé",
         "provincia": "Santa Fe",
         "centro": (-31.6667, -60.7667),
-        "slug_argenprop": "santo-tome",
-        "slug_zonaprop": "santo-tome-santa-fe",
-        "slug_ml": "santo-tome",
+        "argenprop_slug": "santo-tome",
+        "zonaprop_slug": "santo-tome-santa-fe",
+        "ml_query": "santo-tome",
     },
 ]
 
 # ---------- CRITERIOS DUROS (filtros que descartan) ----------
 # Si una propiedad NO cumple esto, se descarta automáticamente
-SUPERFICIE_MIN = 80     # m² mínimo (criterio La Porca)
-SUPERFICIE_MAX = 225    # m² máximo (con tolerancia sobre los 150 ideales)
-
-# Variable que usa scoring.py para los filtros duros
 CRITERIOS_DUROS = {
-    "superficie_min": SUPERFICIE_MIN,
-    "superficie_max": SUPERFICIE_MAX,
+    "superficie_min_m2": 80,     # m² mínimo (criterio La Porca)
+    "superficie_max_m2": 225,    # m² máximo (con tolerancia sobre los 150 ideales)
 }
 
 # ---------- CRITERIOS BLANDOS (suman puntos al score) ----------
