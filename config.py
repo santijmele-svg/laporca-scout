@@ -53,6 +53,12 @@ ZONAS = [
 SUPERFICIE_MIN = 80     # m² mínimo (criterio La Porca)
 SUPERFICIE_MAX = 225    # m² máximo (con tolerancia sobre los 150 ideales)
 
+# Variable que usa scoring.py para los filtros duros
+CRITERIOS_DUROS = {
+    "superficie_min": SUPERFICIE_MIN,
+    "superficie_max": SUPERFICIE_MAX,
+}
+
 # ---------- CRITERIOS BLANDOS (suman puntos al score) ----------
 # Cada keyword que matchea suma sus puntos
 CRITERIOS_BLANDOS = {
