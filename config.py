@@ -56,16 +56,16 @@ CRITERIOS_DUROS = {
 }
 
 # ---------- CRITERIOS BLANDOS (suman puntos al score) ----------
-# Cada keyword que matchea suma sus puntos
+# Cada keyword que matchea suma su peso al score total
 CRITERIOS_BLANDOS = {
-    "esquina": {"keywords": ["esquina", "ochava"], "puntos": 20},
-    "buena_visibilidad": {"keywords": ["vidriera", "ventanal", "ventana grande"], "puntos": 15},
-    "frente_amplio": {"keywords": ["6 mts de frente", "6m de frente", "frente amplio", "doble frente", "7 mts de frente", "8 mts de frente"], "puntos": 15},
-    "alta_circulacion": {"keywords": ["alta circulación", "muy transitada", "avenida principal", "sobre avenida", "sobre av", "zona comercial"], "puntos": 10},
-    "estacionamiento": {"keywords": ["estacionamiento", "cochera", "playa de estacionamiento"], "puntos": 5},
-    "trifasica": {"keywords": ["trifásica", "trifasica", "380v", "380 v"], "puntos": 10},
-    "apto_alimentos": {"keywords": ["apto alimentos", "apto gastronomía", "carnicería", "rotisería", "fiambrería", "supermercado"], "puntos": 15},
-    "superficie_ideal": {"keywords": [], "puntos": 10},  # se asigna por código si está entre 90-130m²
+    "esquina": {"keywords": ["esquina", "ochava"], "peso": 20},
+    "buena_visibilidad": {"keywords": ["vidriera", "ventanal", "ventana grande"], "peso": 15},
+    "frente_amplio": {"keywords": ["6 mts de frente", "6m de frente", "frente amplio", "doble frente", "7 mts de frente", "8 mts de frente"], "peso": 15},
+    "alta_circulacion": {"keywords": ["alta circulación", "muy transitada", "avenida principal", "sobre avenida", "sobre av", "zona comercial"], "peso": 10},
+    "estacionamiento": {"keywords": ["estacionamiento", "cochera", "playa de estacionamiento"], "peso": 5},
+    "trifasica": {"keywords": ["trifásica", "trifasica", "380v", "380 v"], "peso": 10},
+    "apto_alimentos": {"keywords": ["apto alimentos", "apto gastronomía", "carnicería", "rotisería", "fiambrería", "supermercado"], "peso": 15},
+    "superficie_ideal": {"keywords": [], "peso": 10},
 }
 
 UMBRAL_INTERES = 40  # Score a partir del cual una propiedad se marca como prioritaria
@@ -75,12 +75,10 @@ UMBRAL_INTERES = 40  # Score a partir del cual una propiedad se marca como prior
 EXCLUIR_KEYWORDS = [
     "primer piso", "1° piso", "segundo piso", "2° piso",
     "planta alta", "entrepiso",
-    "oficina",      # buscamos local, no oficina pura
-    "consultorio",  # idem, no es local comercial de alimentos
+    "oficina",
+    "consultorio",
 ]
 
-# Keywords que NO son de exclusión aunque matcheen las anteriores
-# (ej: "local + oficina anexa" debería pasar, no es solo oficina)
 EXCEPCIONES_EXCLUSION = [
     "local + oficina",
     "local y oficina",
@@ -93,9 +91,6 @@ JSON_OUTPUT = "dashboard/data.json"
 LOG_PATH = "data/scraper.log"
 
 # ---------- INMOBILIARIAS LOCALES ----------
-# Cada una se scrapea con el GenericScraper que intenta extraer listings
-# con heurísticas. Las que no funcionen bien se refinan con un scraper dedicado.
-# Para agregar una nueva: copiar formato y poner la URL del listado de alquileres.
 INMOBILIARIAS_LOCALES = [
     # --- PARANÁ Y GRAN PARANÁ ---
     {"nombre": "Russo Real Estate", "url": "https://www.russorealestate.com.ar", "zonas": ["Paraná", "Oro Verde", "San Benito"]},
@@ -145,7 +140,6 @@ INMOBILIARIAS_LOCALES = [
 ]
 
 # ---------- FACEBOOK MARKETPLACE (búsquedas guardadas) ----------
-# El dashboard muestra estos links como acceso directo. No se scrapea.
 MARKETPLACE_BUSQUEDAS = [
     {"zona": "Paraná", "url": "https://www.facebook.com/marketplace/parana/propertyrentals?query=local%20comercial"},
     {"zona": "Santa Fe", "url": "https://www.facebook.com/marketplace/santafe/propertyrentals?query=local%20comercial"},
