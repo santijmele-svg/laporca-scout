@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-04-30T16:42:50Z",
-  "total": 19,
+  "actualizado": "2026-05-01T13:07:47Z",
+  "total": 16,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
-    "sin_cambios": 19,
-    "descartadas_filtro": 50,
-    "nueva": 19,
+    "sin_cambios": 31,
+    "descartadas_filtro": 57,
+    "nueva": 0,
     "actualizada": 0
   },
   "zonas": [
@@ -67,53 +67,6 @@
   ],
   "propiedades": [
     {
-      "id": "cd7c1c5f7ea52380",
-      "url": "https://www.russorealestate.com.ar/p/7821639-Local-en-Alquiler-en-Retiro-Avenida-Santa-Fe-al-800",
-      "portal": "inmo:russo_real_estate",
-      "zona": "Paraná",
-      "titulo": "",
-      "descripcion": "RUSSO REAL ESTATE  - Local en Alquiler en Retiro - Avenida Santa Fe al 800",
-      "direccion": "",
-      "precio": 3000.0,
-      "moneda": "USD",
-      "superficie_m2": 105.0,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 25,
-      "criterios_match": [
-        "alta_circulacion",
-        "superficie_ideal"
-      ],
-      "primera_vez_visto": "2026-04-30T16:36:10",
-      "ultima_vez_visto": "2026-04-30T16:39:32",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
-      "id": "440dbbc01904e42c",
-      "url": "https://www.florenciobogado.com.ar/propiedades/?operacion=alquiler&tipo=local&sortby=a_price",
-      "portal": "inmo:florencio_bogado",
-      "zona": "Paraná",
-      "titulo": "Properties",
-      "descripcion": "Agregar a Favorito Casa en Colonia Avellaneda: Espaciosa y Bien Ubicada sobre Calle San Martín ? Ubicación: Calle de Ingreso San Martín, Colonia Avellaneda, Entre Ríos, Argentina. Esta propiedad, situada sobre la calle principal de ingreso a Colonia Avellaneda, ofrece una ubicación estratégica a pocos metros de la ruta, ideal para aquellos que buscan comodidad… Agregar a Favorito Residencia de Ensueño en Calle Urdinarrain – Tu Nuevo Hogar Está Aquí ? Descubre la elegancia y comodidad que esta hermosa casa estilo Chalet tiene para ofrecer. Ubicada en una de las zonas más codiciadas de la ciudad, sobre la tranquila Calle Urdinarrain, esta propiedad se presenta como la opción perfecta para… Agregar a Favorito Oportunidad en Calle Dean Álvarez: Casa Familiar a Reciclar en Zona Privilegiada ? Ubicación: Calle Dean Álvarez, a metros de Av. Ramírez, Paraná, Entre Ríos, Argentina. Esta propiedad se encuentra en una zona bien considerada, con frente sobre la calle Dean Álvarez y a pocos metros ",
-      "direccion": "",
-      "precio": null,
-      "moneda": null,
-      "superficie_m2": null,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 15,
-      "criterios_match": [
-        "buena_visibilidad"
-      ],
-      "primera_vez_visto": "2026-04-30T16:37:22",
-      "ultima_vez_visto": "2026-04-30T16:37:22",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
       "id": "39b4afd4248e9067",
       "url": "https://www.demichelisbiasoni.com/locales-en-alquiler",
       "portal": "inmo:demichelis_biasoni",
@@ -131,7 +84,7 @@
         "superficie_ideal"
       ],
       "primera_vez_visto": "2026-04-30T16:40:15",
-      "ultima_vez_visto": "2026-04-30T16:42:37",
+      "ultima_vez_visto": "2026-05-01T13:07:33",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -154,7 +107,7 @@
         "superficie_ideal"
       ],
       "primera_vez_visto": "2026-04-30T16:40:15",
-      "ultima_vez_visto": "2026-04-30T16:42:37",
+      "ultima_vez_visto": "2026-05-01T13:07:33",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -177,7 +130,7 @@
         "superficie_ideal"
       ],
       "primera_vez_visto": "2026-04-30T16:40:15",
-      "ultima_vez_visto": "2026-04-30T16:42:37",
+      "ultima_vez_visto": "2026-05-01T13:07:33",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -200,7 +153,7 @@
         "superficie_ideal"
       ],
       "primera_vez_visto": "2026-04-30T16:36:10",
-      "ultima_vez_visto": "2026-04-30T16:39:32",
+      "ultima_vez_visto": "2026-05-01T13:04:24",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -223,7 +176,7 @@
         "superficie_ideal"
       ],
       "primera_vez_visto": "2026-04-30T16:36:10",
-      "ultima_vez_visto": "2026-04-30T16:39:32",
+      "ultima_vez_visto": "2026-05-01T13:04:24",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -246,7 +199,7 @@
         "estacionamiento"
       ],
       "primera_vez_visto": "2026-04-30T16:37:22",
-      "ultima_vez_visto": "2026-04-30T16:37:22",
+      "ultima_vez_visto": "2026-05-01T13:02:15",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -267,7 +220,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:40:29",
-      "ultima_vez_visto": "2026-04-30T16:42:42",
+      "ultima_vez_visto": "2026-05-01T13:07:39",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -288,7 +241,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:40:15",
-      "ultima_vez_visto": "2026-04-30T16:42:37",
+      "ultima_vez_visto": "2026-05-01T13:07:33",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -309,7 +262,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:41:38",
-      "ultima_vez_visto": "2026-04-30T16:41:38",
+      "ultima_vez_visto": "2026-05-01T13:06:28",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -330,7 +283,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:40:39",
-      "ultima_vez_visto": "2026-04-30T16:40:39",
+      "ultima_vez_visto": "2026-05-01T13:05:34",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -351,7 +304,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:40:23",
-      "ultima_vez_visto": "2026-04-30T16:40:23",
+      "ultima_vez_visto": "2026-05-01T13:05:16",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -372,7 +325,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:40:23",
-      "ultima_vez_visto": "2026-04-30T16:40:23",
+      "ultima_vez_visto": "2026-05-01T13:05:16",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -393,7 +346,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:36:10",
-      "ultima_vez_visto": "2026-04-30T16:39:32",
+      "ultima_vez_visto": "2026-05-01T13:04:24",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -414,7 +367,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:36:10",
-      "ultima_vez_visto": "2026-04-30T16:39:32",
+      "ultima_vez_visto": "2026-05-01T13:04:24",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -435,28 +388,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:36:10",
-      "ultima_vez_visto": "2026-04-30T16:39:32",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
-      "id": "015f34ffad13ec92",
-      "url": "https://www.russorealestate.com.ar/p/7938261-Local-en-Alquiler-en-Recoleta-Guido--al-1900",
-      "portal": "inmo:russo_real_estate",
-      "zona": "Paraná",
-      "titulo": "",
-      "descripcion": "RUSSO REAL ESTATE  - Local en Alquiler en Recoleta - Guido  al 1900",
-      "direccion": "",
-      "precio": 4000.0,
-      "moneda": "USD",
-      "superficie_m2": 163.0,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 0,
-      "criterios_match": [],
-      "primera_vez_visto": "2026-04-30T16:36:10",
-      "ultima_vez_visto": "2026-04-30T16:39:32",
+      "ultima_vez_visto": "2026-05-01T13:04:24",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -477,7 +409,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-04-30T16:36:55",
-      "ultima_vez_visto": "2026-04-30T16:36:55",
+      "ultima_vez_visto": "2026-05-01T13:01:37",
       "estado": "activa",
       "descartada": 0,
       "notas": null
