@@ -51,12 +51,11 @@ ZONAS = [
 CRITERIOS_DUROS = {
     "superficie_min_m2": 80,
     "superficie_max_m2": 225,
-    "precio_max_ars": 2_500_000,   # alquileres en ARS hasta este monto
-    "descartar_usd": True,         # propiedades en USD = ventas, descartar
+    "precio_max_ars": 2_500_000,
+    "descartar_usd": True,
 }
 
-# Bounding box geográfico: descarta propiedades fuera de esta zona
-# (lat_min, lat_max, lon_min, lon_max) — cubre Paraná, Santa Fe, Santo Tomé y alrededores
+# Bounding box geográfico
 BBOX_GEO = {
     "lat_min": -32.20,
     "lat_max": -31.40,
@@ -100,10 +99,7 @@ LOG_PATH = "data/scraper.log"
 # ---------- INMOBILIARIAS LOCALES ----------
 INMOBILIARIAS_LOCALES = [
     # --- PARANÁ Y GRAN PARANÁ ---
-    {"nombre": "Russo Real Estate", "url": "https://www.russorealestate.com.ar", "zonas": ["Paraná", "Oro Verde", "San Benito"]},
     {"nombre": "Walter Ferrando", "url": "https://www.walterferrando.com.ar", "zonas": ["Paraná"]},
-    {"nombre": "Campa Inmobiliaria", "url": "https://www.campainmobiliaria.com.ar", "zonas": ["Paraná"]},
-    {"nombre": "Gaspar Fita", "url": "https://www.gasparfita.com.ar", "zonas": ["Paraná"]},
     {"nombre": "JC Bustamante", "url": "https://www.jcbustamante.com.ar", "zonas": ["Paraná"]},
     {"nombre": "Calabrese García", "url": "https://www.calabresegarcia.com.ar", "zonas": ["Paraná"]},
     {"nombre": "Ramirez Bienes Raices", "url": "https://www.ramirezbienesraices.com.ar", "zonas": ["Paraná"]},
@@ -111,14 +107,27 @@ INMOBILIARIAS_LOCALES = [
     {"nombre": "Buscema", "url": "https://buscemainmobiliaria.com.ar", "zonas": ["Paraná"]},
     {"nombre": "Umedez", "url": "https://inmobiliariaumedez.com.ar", "zonas": ["Paraná"]},
     {"nombre": "Florencio Bogado", "url": "https://www.florenciobogado.com.ar", "zonas": ["Paraná"]},
-    {"nombre": "Inmobiliaria Paraná", "url": "https://www.inmobiliariaparana.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Mega", "url": "https://inmobiliariamega.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Caramagna", "url": "https://www.caramagnainmobiliaria.com", "zonas": ["Paraná"]},
+    {"nombre": "Armandola", "url": "https://inmobiliariaarmandola.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Hojman", "url": "https://www.hojman.net", "zonas": ["Paraná"]},
+    {"nombre": "Del Parque Propiedades", "url": "https://www.delparqueprop.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Latene", "url": "https://lateneinmobiliaria.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Pilar", "url": "https://www.pilarinmobiliaria.ar", "zonas": ["Paraná"]},
+    {"nombre": "MacBeth", "url": "https://www.macbethns.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Osides Mayor", "url": "https://www.osidesmayor.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Inmoguía", "url": "https://www.inmoguia.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Félix Ruiz Propiedades", "url": "https://felixruizpropiedades.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Quindt", "url": "https://www.quindtinmobiliaria.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Tacuaras", "url": "https://tacuarasinmobiliaria.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "González Berchín", "url": "https://gonzalezberchin.com.ar", "zonas": ["Paraná"]},
+    {"nombre": "Propiedades Paraná", "url": "https://www.propiedadesparana.com.ar", "zonas": ["Paraná"]},
 
     # --- SANTA FE CAPITAL ---
     {"nombre": "Demichelis & Biasoni", "url": "https://www.demichelisbiasoni.com", "zonas": ["Santa Fe", "Santo Tomé"]},
     {"nombre": "Salas Inmobiliaria", "url": "https://www.salasinmobiliaria.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "Anabel Inmobiliaria", "url": "https://www.anabelinmobiliaria.com.ar", "zonas": ["Santa Fe", "Santo Tomé"]},
     {"nombre": "Christen Inmobiliaria", "url": "https://www.christen.com.ar", "zonas": ["Santa Fe"]},
-    {"nombre": "Coldwell Banker Iovaldi", "url": "https://www.coldwellbanker.com.ar", "zonas": ["Santa Fe"]},
     {"nombre": "RE/MAX Faro", "url": "https://www.remax.com.ar/oficina/remax-faro", "zonas": ["Santa Fe"]},
     {"nombre": "RE/MAX Futuro", "url": "https://www.remax.com.ar/oficina/remax-futuro", "zonas": ["Santa Fe"]},
     {"nombre": "RE/MAX Cordial", "url": "https://www.remax.com.ar/oficina/remax-cordial", "zonas": ["Santa Fe"]},
