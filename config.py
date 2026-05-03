@@ -4,7 +4,6 @@ Editar acá: zonas, criterios, inmobiliarias.
 """
 
 # ---------- ZONAS ----------
-# Cada zona define dónde buscar y centro geográfico para fallback de geocoding
 ZONAS = [
     {
         "nombre": "Paraná",
@@ -49,14 +48,23 @@ ZONAS = [
 ]
 
 # ---------- CRITERIOS DUROS (filtros que descartan) ----------
-# Si una propiedad NO cumple esto, se descarta automáticamente
 CRITERIOS_DUROS = {
-    "superficie_min_m2": 80,     # m² mínimo (criterio La Porca)
-    "superficie_max_m2": 225,    # m² máximo (con tolerancia sobre los 150 ideales)
+    "superficie_min_m2": 80,
+    "superficie_max_m2": 225,
+    "precio_max_ars": 2_500_000,   # alquileres en ARS hasta este monto
+    "descartar_usd": True,         # propiedades en USD = ventas, descartar
+}
+
+# Bounding box geográfico: descarta propiedades fuera de esta zona
+# (lat_min, lat_max, lon_min, lon_max) — cubre Paraná, Santa Fe, Santo Tomé y alrededores
+BBOX_GEO = {
+    "lat_min": -32.20,
+    "lat_max": -31.40,
+    "lon_min": -60.95,
+    "lon_max": -60.30,
 }
 
 # ---------- CRITERIOS BLANDOS (suman puntos al score) ----------
-# Cada keyword que matchea suma su peso al score total
 CRITERIOS_BLANDOS = {
     "esquina": {"keywords": ["esquina", "ochava"], "peso": 20},
     "buena_visibilidad": {"keywords": ["vidriera", "ventanal", "ventana grande"], "peso": 15},
@@ -68,10 +76,9 @@ CRITERIOS_BLANDOS = {
     "superficie_ideal": {"keywords": [], "peso": 10},
 }
 
-UMBRAL_INTERES = 40  # Score a partir del cual una propiedad se marca como prioritaria
+UMBRAL_INTERES = 40
 
 # ---------- KEYWORDS DE EXCLUSIÓN ----------
-# Si la descripción contiene esto, se descarta (rompe el req "una sola planta")
 EXCLUIR_KEYWORDS = [
     "primer piso", "1° piso", "segundo piso", "2° piso",
     "planta alta", "entrepiso",
