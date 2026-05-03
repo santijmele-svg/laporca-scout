@@ -748,3 +748,35 @@ input[type="range"]::-moz-range-thumb {
   }
   .drawer { width: 100vw; right: -100vw; }
 }
+
+/* Botón "i" en las tarjetas para abrir detalle */
+.rc-info-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 22px;
+  height: 22px;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  color: var(--ink-mute);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  font-style: italic;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: all 0.12s ease;
+  z-index: 5;
+}
+.rc-info-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Cuando hay tag NUEVA, desplazar el botón "i" */
+.result-card .rc-tag-new + .rc-info-btn {
+  top: 28px;
+}
