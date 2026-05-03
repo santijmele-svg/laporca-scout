@@ -26,11 +26,11 @@ const state = {
   user: loadUserState(),
   map: null,
   cluster: null,
-  markers: new Map(), // id -> marker
+  markers: new Map(),
 };
 
 // =================================================================
-// Persistencia local de descartadas/favoritas/notas
+// Persistencia local
 // =================================================================
 function loadUserState() {
   try {
@@ -113,7 +113,6 @@ function buildFilterChips() {
   const zonaContainer = document.getElementById('filter-zona');
   const portalContainer = document.getElementById('filter-portal');
 
-  // Zonas
   const zonas = state.data.zonas.map(z => z.nombre);
   zonaContainer.innerHTML = '';
   zonas.forEach(z => {
@@ -130,7 +129,6 @@ function buildFilterChips() {
     zonaContainer.appendChild(btn);
   });
 
-  // Portales: extraer únicos de los datos
   const portalesPresentes = new Set();
   state.data.propiedades.forEach(p => {
     if (p.portal) portalesPresentes.add(p.portal);
@@ -265,7 +263,6 @@ function applySort(props) {
 // Mapa
 // =================================================================
 function initMap() {
-  // Centro entre las 5 zonas
   const center = [-31.72, -60.61];
   state.map = L.map('map', {
     zoomControl: true,
@@ -303,9 +300,14 @@ function buildMarker(prop) {
       <div style="font-size:11px;color:#888;margin-top:4px">
         ${prop.superficie_m2 ? prop.superficie_m2 + ' m²' : '—'}
       </div>
+      <a href="${prop.url}" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;padding:4px 10px;background:#ffd400;color:#000;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.15em;text-decoration:none;font-weight:700">
+        VER AVISO ↗
+      </a>
     </div>
   `);
-  marker.on('click', () => openDrawer(prop));
+  marker.on('click', () => {
+    // En el mapa abrimos popup primero (default), no drawer
+  });
   return marker;
 }
 
@@ -331,7 +333,14 @@ function buildResultCard(prop) {
   else if (cat === 'priority') classes.push('result-card--priority');
   else if (cat === 'saved') classes.push('result-card--saved');
   card.className = classes.join(' ');
-  card.onclick = () => openDrawer(prop);
+
+  // Click en la tarjeta abre el aviso directamente
+  card.onclick = (e) => {
+    // Si clickearon el botón "info", no hacer nada (el botón maneja su propio evento)
+    if (e.target.closest('.rc-info-btn')) return;
+    if (prop.url) window.open(prop.url, '_blank', 'noopener');
+  };
+  card.style.cursor = 'pointer';
 
   const score = prop.score || 0;
   const umbral = state.data.umbral_interes || 40;
@@ -343,6 +352,7 @@ function buildResultCard(prop) {
 
   card.innerHTML = `
     ${isNew(prop) ? '<span class="rc-tag-new">NUEVA</span>' : ''}
+    <button class="rc-info-btn" title="Ver detalle">i</button>
     <div class="rc-row">
       <span class="rc-zone">${prop.zona}</span>
       <span class="rc-portal">${portal}</span>
@@ -358,6 +368,16 @@ function buildResultCard(prop) {
       </div>
     </div>
   `;
+
+  // Botón "i" abre el drawer de detalle
+  const infoBtn = card.querySelector('.rc-info-btn');
+  if (infoBtn) {
+    infoBtn.onclick = (e) => {
+      e.stopPropagation();
+      openDrawer(prop);
+    };
+  }
+
   return card;
 }
 
