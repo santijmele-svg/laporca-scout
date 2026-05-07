@@ -20,8 +20,11 @@ TITULOS_BASURA_EXACTOS = [
     "propiedades",
     "properties",
     "locales en alquiler",
+    "locales en alquiler temp",
+    "locales en alquiler temporario",
     "alquileres",
     "alquiler",
+    "alquileres temporarios",
     "(sin título)",
     "sin título",
     "inmuebles",
@@ -29,6 +32,11 @@ TITULOS_BASURA_EXACTOS = [
     "ver más",
     "home",
     "inicio",
+    "página no encontrada",
+    "pagina no encontrada",
+    "404",
+    "error 404",
+    "not found",
 ]
 
 CIUDADES_OTRAS = [
@@ -100,8 +108,6 @@ def pasa_filtros_duros(prop: dict) -> tuple[bool, str]:
                 return False, f"contiene_keyword_excluyente:{excl}"
 
     # 8. Otras ciudades (filtro más estricto)
-    # Solo descarta si menciona otra ciudad explícitamente
-    # Y NO menciona ninguna de nuestras zonas
     menciona_otra = any(c in texto for c in CIUDADES_OTRAS)
     menciona_objetivo = any(c in texto for c in CIUDADES_OBJETIVO)
     if menciona_otra and not menciona_objetivo:
