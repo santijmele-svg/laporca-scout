@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-05-06T18:11:28Z",
+  "actualizado": "2026-05-07T18:25:38Z",
   "total": 33,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
     "sin_cambios": 0,
-    "descartadas_filtro": 104,
+    "descartadas_filtro": 50,
     "nueva": 0,
     "actualizada": 0
   },
