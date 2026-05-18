@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-05-17T15:55:19Z",
+  "actualizado": "2026-05-18T18:36:15Z",
   "total": 10,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
-    "sin_cambios": 3,
-    "descartadas_filtro": 53,
-    "nueva": 0,
+    "sin_cambios": 1,
+    "descartadas_filtro": 54,
+    "nueva": 2,
     "actualizada": 0
   },
   "zonas": [
@@ -67,52 +67,6 @@
   ],
   "propiedades": [
     {
-      "id": "81350e1ac7545e75",
-      "url": "https://inmobiliariamega.com.ar/propiedades?operacion=alquiler&tipo=local",
-      "portal": "inmo:mega",
-      "zona": "Paraná",
-      "titulo": "Archivos de Blog",
-      "descripcion": "*Le enviaremos la contraseña por correo electrónico Bridamos soluciones y asesoramiento inmobiliario adaptado a las medidas de cada cliente. Alquiler y venta de inmuebles. Paraná Echagüe 720, Paraná WhatsApp: 343 5087586",
-      "direccion": "",
-      "precio": null,
-      "moneda": null,
-      "superficie_m2": 92.0,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 10,
-      "criterios_match": [
-        "superficie_ideal"
-      ],
-      "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-05-17T15:47:10",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
-      "id": "fca7682166d662fc",
-      "url": "https://inmobiliariamega.com.ar/propiedades/?operacion=alquiler&tipo=local",
-      "portal": "inmo:mega",
-      "zona": "Paraná",
-      "titulo": "Archivos de Blog",
-      "descripcion": "*Le enviaremos la contraseña por correo electrónico Bridamos soluciones y asesoramiento inmobiliario adaptado a las medidas de cada cliente. Alquiler y venta de inmuebles. Paraná Echagüe 720, Paraná WhatsApp: 343 5087586",
-      "direccion": "",
-      "precio": null,
-      "moneda": null,
-      "superficie_m2": 92.0,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 10,
-      "criterios_match": [
-        "superficie_ideal"
-      ],
-      "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-05-17T15:47:10",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
       "id": "1661d3f02946310d",
       "url": "https://www.zonaprop.com.ar/propiedades/clasificado/alcllcin-rioja-1728-58995764.html?n_src=Listado&n_pg=1&n_pos=23",
       "portal": "zonaprop",
@@ -159,6 +113,48 @@
       "notas": null
     },
     {
+      "id": "f528babcfbda8a3e",
+      "url": "https://inmobiliariamega.com.ar/propiedades/page/3/?operacion=alquiler&tipo=local",
+      "portal": "inmo:mega",
+      "zona": "Paraná",
+      "titulo": "Archivos de Blog",
+      "descripcion": "*Le enviaremos la contraseña por correo electrónico Bridamos soluciones y asesoramiento inmobiliario adaptado a las medidas de cada cliente. Alquiler y venta de inmuebles. Paraná Echagüe 720, Paraná WhatsApp: 343 5087586",
+      "direccion": "",
+      "precio": null,
+      "moneda": null,
+      "superficie_m2": 158.0,
+      "lat": -31.7319,
+      "lon": -60.5238,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-05-18T18:26:43",
+      "ultima_vez_visto": "2026-05-18T18:26:43",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
+      "id": "365c6ed4edec8ee8",
+      "url": "https://inmobiliariamega.com.ar/propiedades/page/26/?operacion=alquiler&tipo=local",
+      "portal": "inmo:mega",
+      "zona": "Paraná",
+      "titulo": "Archivos de Blog",
+      "descripcion": "*Le enviaremos la contraseña por correo electrónico Bridamos soluciones y asesoramiento inmobiliario adaptado a las medidas de cada cliente. Alquiler y venta de inmuebles. Paraná Echagüe 720, Paraná WhatsApp: 343 5087586",
+      "direccion": "",
+      "precio": null,
+      "moneda": null,
+      "superficie_m2": 200.0,
+      "lat": -31.7319,
+      "lon": -60.5238,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-05-18T18:26:43",
+      "ultima_vez_visto": "2026-05-18T18:26:43",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
       "id": "7cc685206156f5e2",
       "url": "https://leoninmobiliaria.com.ar/detalle-445-blas-parera-528-parana",
       "portal": "inmo:le_n_inmobiliaria",
@@ -174,7 +170,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-08T01:04:24",
-      "ultima_vez_visto": "2026-05-17T15:46:10",
+      "ultima_vez_visto": "2026-05-18T18:25:37",
       "estado": "activa",
       "descartada": 0,
       "notas": null
