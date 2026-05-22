@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-05-21T18:41:17Z",
-  "total": 14,
+  "actualizado": "2026-05-22T18:36:34Z",
+  "total": 15,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
     "sin_cambios": 1,
-    "descartadas_filtro": 56,
-    "nueva": 0,
+    "descartadas_filtro": 57,
+    "nueva": 1,
     "actualizada": 0
   },
   "zonas": [
@@ -136,6 +136,27 @@
       "notas": null
     },
     {
+      "id": "e4fde44a6f954057",
+      "url": "https://migoneinmobiliaria.com.ar/local-en-alquiler-en-microcentro-ficha-mig5180",
+      "portal": "inmo:migone",
+      "zona": "Santa Fe",
+      "titulo": "en",
+      "descripcion": "Alquiler de Local en zona MICROCENTRO, SANTA FE.Local comercial a metros de Peatonal San Martín. Consta de salón con frente vidriado con per",
+      "direccion": "",
+      "precio": null,
+      "moneda": null,
+      "superficie_m2": null,
+      "lat": -31.6333,
+      "lon": -60.7,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-05-22T18:33:00",
+      "ultima_vez_visto": "2026-05-22T18:33:00",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
       "id": "7cc685206156f5e2",
       "url": "https://leoninmobiliaria.com.ar/detalle-445-blas-parera-528-parana",
       "portal": "inmo:le_n_inmobiliaria",
@@ -151,7 +172,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-08T01:04:24",
-      "ultima_vez_visto": "2026-05-21T18:32:09",
+      "ultima_vez_visto": "2026-05-22T18:26:50",
       "estado": "activa",
       "descartada": 0,
       "notas": null
