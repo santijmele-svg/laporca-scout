@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-06-03T17:28:54Z",
+  "actualizado": "2026-06-04T15:57:41Z",
   "total": 11,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
-    "sin_cambios": 5,
-    "descartadas_filtro": 54,
-    "nueva": 1,
+    "sin_cambios": 6,
+    "descartadas_filtro": 53,
+    "nueva": 0,
     "actualizada": 0
   },
   "zonas": [
@@ -84,7 +84,7 @@
         "superficie_ideal"
       ],
       "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-06-03T17:20:43",
+      "ultima_vez_visto": "2026-06-04T15:47:54",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -107,7 +107,7 @@
         "superficie_ideal"
       ],
       "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-06-03T17:20:43",
+      "ultima_vez_visto": "2026-06-04T15:47:54",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -151,7 +151,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-22T18:33:00",
-      "ultima_vez_visto": "2026-06-03T17:25:39",
+      "ultima_vez_visto": "2026-06-04T15:54:35",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -172,7 +172,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-18T18:26:43",
-      "ultima_vez_visto": "2026-06-03T17:20:43",
+      "ultima_vez_visto": "2026-06-04T15:47:54",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -193,7 +193,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-06-03T17:20:43",
-      "ultima_vez_visto": "2026-06-03T17:20:43",
+      "ultima_vez_visto": "2026-06-04T15:47:54",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -214,7 +214,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-08T01:04:24",
-      "ultima_vez_visto": "2026-06-03T17:19:36",
+      "ultima_vez_visto": "2026-06-04T15:46:49",
       "estado": "activa",
       "descartada": 0,
       "notas": null
