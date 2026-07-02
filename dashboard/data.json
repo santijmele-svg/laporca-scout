@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-07-01T15:43:40Z",
+  "actualizado": "2026-07-02T15:00:47Z",
   "total": 12,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
     "sin_cambios": 1,
-    "descartadas_filtro": 53,
+    "descartadas_filtro": 50,
     "nueva": 0,
     "actualizada": 0
   },
@@ -151,7 +151,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-08T01:04:24",
-      "ultima_vez_visto": "2026-07-01T15:15:43",
+      "ultima_vez_visto": "2026-07-02T14:32:22",
       "estado": "activa",
       "descartada": 0,
       "notas": null
