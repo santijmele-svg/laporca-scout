@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-07-13T15:42:27Z",
+  "actualizado": "2026-07-14T14:38:22Z",
   "total": 13,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
     "sin_cambios": 1,
-    "descartadas_filtro": 52,
-    "nueva": 1,
+    "descartadas_filtro": 50,
+    "nueva": 0,
     "actualizada": 0
   },
   "zonas": [
@@ -136,6 +136,27 @@
       "notas": null
     },
     {
+      "id": "7cc685206156f5e2",
+      "url": "https://leoninmobiliaria.com.ar/detalle-445-blas-parera-528-parana",
+      "portal": "inmo:le_n_inmobiliaria",
+      "zona": "Paraná",
+      "titulo": "estas Propiedades.",
+      "descripcion": "Servicios Inmobiliarios",
+      "direccion": "",
+      "precio": 528000.0,
+      "moneda": "ARS",
+      "superficie_m2": null,
+      "lat": -31.7319,
+      "lon": -60.5238,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-05-08T01:04:24",
+      "ultima_vez_visto": "2026-07-14T14:16:23",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
       "id": "9b8d4486525c1631",
       "url": "https://inmobiliariamega.com.ar/propiedades/page/35/?operacion=alquiler&tipo=local",
       "portal": "inmo:mega",
@@ -152,27 +173,6 @@
       "criterios_match": [],
       "primera_vez_visto": "2026-07-13T15:19:46",
       "ultima_vez_visto": "2026-07-13T15:19:46",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
-      "id": "7cc685206156f5e2",
-      "url": "https://leoninmobiliaria.com.ar/detalle-445-blas-parera-528-parana",
-      "portal": "inmo:le_n_inmobiliaria",
-      "zona": "Paraná",
-      "titulo": "estas Propiedades.",
-      "descripcion": "Servicios Inmobiliarios",
-      "direccion": "",
-      "precio": 528000.0,
-      "moneda": "ARS",
-      "superficie_m2": null,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 0,
-      "criterios_match": [],
-      "primera_vez_visto": "2026-05-08T01:04:24",
-      "ultima_vez_visto": "2026-07-13T15:14:47",
       "estado": "activa",
       "descartada": 0,
       "notas": null
