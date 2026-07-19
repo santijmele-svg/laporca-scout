@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-07-18T14:21:53Z",
+  "actualizado": "2026-07-19T14:23:54Z",
   "total": 12,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
     "sin_cambios": 1,
-    "descartadas_filtro": 71,
-    "nueva": 9,
+    "descartadas_filtro": 38,
+    "nueva": 0,
     "actualizada": 0
   },
   "zonas": [
@@ -136,6 +136,27 @@
       "notas": null
     },
     {
+      "id": "7cc685206156f5e2",
+      "url": "https://leoninmobiliaria.com.ar/detalle-445-blas-parera-528-parana",
+      "portal": "inmo:le_n_inmobiliaria",
+      "zona": "Paraná",
+      "titulo": "estas Propiedades.",
+      "descripcion": "Servicios Inmobiliarios",
+      "direccion": "",
+      "precio": 528000.0,
+      "moneda": "ARS",
+      "superficie_m2": null,
+      "lat": -31.7319,
+      "lon": -60.5238,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-05-08T01:04:24",
+      "ultima_vez_visto": "2026-07-19T13:56:59",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
       "id": "60931835dac9f7d6",
       "url": "https://www.zonaprop.com.ar/propiedades/clasificado/alcllcin-corrientes-161.-amplio-local-en-alquiler-centrico-59468908.html?n_src=Listado&n_pg=1&n_pos=4&n_search_id=484d674c-312b-40d2-9ff8-766b488111aa",
       "portal": "zonaprop",
@@ -257,27 +278,6 @@
       "criterios_match": [],
       "primera_vez_visto": "2026-07-18T14:12:04",
       "ultima_vez_visto": "2026-07-18T14:12:04",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
-      "id": "7cc685206156f5e2",
-      "url": "https://leoninmobiliaria.com.ar/detalle-445-blas-parera-528-parana",
-      "portal": "inmo:le_n_inmobiliaria",
-      "zona": "Paraná",
-      "titulo": "estas Propiedades.",
-      "descripcion": "Servicios Inmobiliarios",
-      "direccion": "",
-      "precio": 528000.0,
-      "moneda": "ARS",
-      "superficie_m2": null,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 0,
-      "criterios_match": [],
-      "primera_vez_visto": "2026-05-08T01:04:24",
-      "ultima_vez_visto": "2026-07-18T13:52:39",
       "estado": "activa",
       "descartada": 0,
       "notas": null
