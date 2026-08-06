@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-05T15:04:37Z",
-  "total": 18,
+  "actualizado": "2026-08-06T15:01:15Z",
+  "total": 19,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
-    "sin_cambios": 3,
-    "descartadas_filtro": 54,
+    "sin_cambios": 2,
+    "descartadas_filtro": 47,
     "nueva": 0,
-    "actualizada": 0
+    "actualizada": 2
   },
   "zonas": [
     {
@@ -159,8 +159,8 @@
       "notas": null
     },
     {
-      "id": "fa4e4b91abf29494",
-      "url": "https://inmobiliariamega.com.ar/propiedades/page/2/?operacion=alquiler&tipo=local",
+      "id": "81350e1ac7545e75",
+      "url": "https://inmobiliariamega.com.ar/propiedades?operacion=alquiler&tipo=local",
       "portal": "inmo:mega",
       "zona": "Paraná",
       "titulo": "Archivos de Blog",
@@ -168,13 +168,34 @@
       "direccion": "",
       "precio": null,
       "moneda": null,
-      "superficie_m2": null,
+      "superficie_m2": 92.0,
       "lat": -31.7319,
       "lon": -60.5238,
       "score": 0,
       "criterios_match": [],
-      "primera_vez_visto": "2026-08-03T15:23:43",
-      "ultima_vez_visto": "2026-08-05T14:41:10",
+      "primera_vez_visto": "2026-05-13T18:32:59",
+      "ultima_vez_visto": "2026-08-06T14:42:12",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
+      "id": "fca7682166d662fc",
+      "url": "https://inmobiliariamega.com.ar/propiedades/?operacion=alquiler&tipo=local",
+      "portal": "inmo:mega",
+      "zona": "Paraná",
+      "titulo": "Archivos de Blog",
+      "descripcion": "*Le enviaremos la contraseña por correo electrónico Bridamos soluciones y asesoramiento inmobiliario adaptado a las medidas de cada cliente. Alquiler y venta de inmuebles. Paraná Echagüe 720, Paraná WhatsApp: 343 5087586",
+      "direccion": "",
+      "precio": null,
+      "moneda": null,
+      "superficie_m2": 92.0,
+      "lat": -31.7319,
+      "lon": -60.5238,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-05-13T18:32:59",
+      "ultima_vez_visto": "2026-08-06T14:42:11",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -195,7 +216,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-07-23T14:36:03",
-      "ultima_vez_visto": "2026-08-05T14:37:00",
+      "ultima_vez_visto": "2026-08-06T14:37:20",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -216,7 +237,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:19:17",
-      "ultima_vez_visto": "2026-08-05T14:37:00",
+      "ultima_vez_visto": "2026-08-06T14:37:20",
       "estado": "activa",
       "descartada": 0,
       "notas": null
