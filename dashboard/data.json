@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-23T13:34:18Z",
+  "actualizado": "2026-08-24T13:44:50Z",
   "total": 24,
   "umbral_interes": 40,
   "stats": {
@@ -220,7 +220,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-08-23T13:10:25",
+      "ultima_vez_visto": "2026-08-24T13:20:32",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -241,7 +241,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-08-23T13:10:25",
+      "ultima_vez_visto": "2026-08-24T13:20:32",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -262,7 +262,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-05-18T18:26:43",
-      "ultima_vez_visto": "2026-08-23T13:10:25",
+      "ultima_vez_visto": "2026-08-24T13:20:32",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -283,7 +283,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-21T13:18:40",
-      "ultima_vez_visto": "2026-08-23T13:10:25",
+      "ultima_vez_visto": "2026-08-24T13:20:32",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -304,7 +304,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-07-23T14:36:03",
-      "ultima_vez_visto": "2026-08-23T13:05:33",
+      "ultima_vez_visto": "2026-08-24T13:16:02",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -325,7 +325,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:19:17",
-      "ultima_vez_visto": "2026-08-23T13:05:33",
+      "ultima_vez_visto": "2026-08-24T13:16:02",
       "estado": "activa",
       "descartada": 0,
       "notas": null
