@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-11T17:00:59Z",
-  "total": 10,
+  "actualizado": "2026-09-12T15:59:30Z",
+  "total": 11,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
-    "sin_cambios": 3,
-    "descartadas_filtro": 52,
+    "sin_cambios": 2,
+    "descartadas_filtro": 38,
     "nueva": 0,
     "actualizada": 0
   },
@@ -159,6 +159,27 @@
       "notas": null
     },
     {
+      "id": "f528babcfbda8a3e",
+      "url": "https://inmobiliariamega.com.ar/propiedades/page/3/?operacion=alquiler&tipo=local",
+      "portal": "inmo:mega",
+      "zona": "Paraná",
+      "titulo": "Archivos de Blog",
+      "descripcion": "*Le enviaremos la contraseña por correo electrónico Bridamos soluciones y asesoramiento inmobiliario adaptado a las medidas de cada cliente. Alquiler y venta de inmuebles. Paraná Echagüe 720, Paraná WhatsApp: 343 5087586",
+      "direccion": "",
+      "precio": null,
+      "moneda": null,
+      "superficie_m2": 158.0,
+      "lat": -31.7319,
+      "lon": -60.5238,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-05-18T18:26:43",
+      "ultima_vez_visto": "2026-09-12T15:38:57",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
       "id": "fa4e4b91abf29494",
       "url": "https://inmobiliariamega.com.ar/propiedades/page/2/?operacion=alquiler&tipo=local",
       "portal": "inmo:mega",
@@ -174,7 +195,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:23:43",
-      "ultima_vez_visto": "2026-09-11T16:36:43",
+      "ultima_vez_visto": "2026-09-12T15:38:57",
       "estado": "activa",
       "descartada": 0,
       "notas": null
