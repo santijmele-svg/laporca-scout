@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-17T17:23:14Z",
+  "actualizado": "2026-09-18T16:55:51Z",
   "total": 20,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
-    "sin_cambios": 2,
-    "descartadas_filtro": 77,
-    "nueva": 13,
+    "sin_cambios": 3,
+    "descartadas_filtro": 58,
+    "nueva": 0,
     "actualizada": 0
   },
   "zonas": [
@@ -151,7 +151,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-09-17T17:12:57",
-      "ultima_vez_visto": "2026-09-17T17:12:57",
+      "ultima_vez_visto": "2026-09-18T16:42:07",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -172,7 +172,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-07-23T14:36:03",
-      "ultima_vez_visto": "2026-09-17T17:02:51",
+      "ultima_vez_visto": "2026-09-18T16:27:55",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -193,7 +193,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:19:17",
-      "ultima_vez_visto": "2026-09-17T17:02:51",
+      "ultima_vez_visto": "2026-09-18T16:27:55",
       "estado": "activa",
       "descartada": 0,
       "notas": null
