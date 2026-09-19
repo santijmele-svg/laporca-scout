@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18T16:55:51Z",
+  "actualizado": "2026-09-19T16:22:44Z",
   "total": 20,
   "umbral_interes": 40,
   "stats": {
@@ -151,7 +151,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-09-17T17:12:57",
-      "ultima_vez_visto": "2026-09-18T16:42:07",
+      "ultima_vez_visto": "2026-09-19T16:10:10",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -172,7 +172,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-07-23T14:36:03",
-      "ultima_vez_visto": "2026-09-18T16:27:55",
+      "ultima_vez_visto": "2026-09-19T15:56:50",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -193,7 +193,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:19:17",
-      "ultima_vez_visto": "2026-09-18T16:27:55",
+      "ultima_vez_visto": "2026-09-19T15:56:50",
       "estado": "activa",
       "descartada": 0,
       "notas": null
