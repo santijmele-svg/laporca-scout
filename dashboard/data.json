@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-22T17:27:39Z",
-  "total": 20,
+  "actualizado": "2026-09-23T17:33:52Z",
+  "total": 21,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
     "sin_cambios": 3,
-    "descartadas_filtro": 57,
-    "nueva": 0,
+    "descartadas_filtro": 56,
+    "nueva": 1,
     "actualizada": 0
   },
   "zonas": [
@@ -151,7 +151,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-09-17T17:12:57",
-      "ultima_vez_visto": "2026-09-22T17:14:11",
+      "ultima_vez_visto": "2026-09-23T17:20:15",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -172,7 +172,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-07-23T14:36:03",
-      "ultima_vez_visto": "2026-09-22T17:00:43",
+      "ultima_vez_visto": "2026-09-23T17:03:59",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -193,7 +193,28 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:19:17",
-      "ultima_vez_visto": "2026-09-22T17:00:43",
+      "ultima_vez_visto": "2026-09-23T17:03:59",
+      "estado": "activa",
+      "descartada": 0,
+      "notas": null
+    },
+    {
+      "id": "35dab3eccd4d1aa6",
+      "url": "https://leoninmobiliaria.com.ar/detalle-459-calle-rioja-535-parana",
+      "portal": "inmo:le_n_inmobiliaria",
+      "zona": "Paraná",
+      "titulo": "estas Propiedades.",
+      "descripcion": "Servicios Inmobiliarios",
+      "direccion": "",
+      "precio": 400000.0,
+      "moneda": "ARS",
+      "superficie_m2": null,
+      "lat": -31.7319,
+      "lon": -60.5238,
+      "score": 0,
+      "criterios_match": [],
+      "primera_vez_visto": "2026-09-23T17:03:59",
+      "ultima_vez_visto": "2026-09-23T17:03:59",
       "estado": "activa",
       "descartada": 0,
       "notas": null
