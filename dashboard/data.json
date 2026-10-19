@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-18T16:20:58Z",
+  "actualizado": "2026-10-19T19:12:47Z",
   "total": 16,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
     "sin_cambios": 4,
-    "descartadas_filtro": 80,
-    "nueva": 6,
-    "actualizada": 1
+    "descartadas_filtro": 59,
+    "nueva": 0,
+    "actualizada": 0
   },
   "zonas": [
     {
@@ -105,7 +105,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-09-17T17:12:57",
-      "ultima_vez_visto": "2026-10-18T16:08:09",
+      "ultima_vez_visto": "2026-10-19T19:00:17",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -126,7 +126,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-07-23T14:36:03",
-      "ultima_vez_visto": "2026-10-18T15:55:33",
+      "ultima_vez_visto": "2026-10-19T18:46:10",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -147,7 +147,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:19:17",
-      "ultima_vez_visto": "2026-10-18T15:55:33",
+      "ultima_vez_visto": "2026-10-19T18:46:10",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -168,7 +168,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-09-23T17:03:59",
-      "ultima_vez_visto": "2026-10-18T15:55:33",
+      "ultima_vez_visto": "2026-10-19T18:46:10",
       "estado": "activa",
       "descartada": 0,
       "notas": null
