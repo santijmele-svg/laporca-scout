@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-10-30T18:30:08Z",
-  "total": 34,
+  "actualizado": "2026-10-31T17:43:59Z",
+  "total": 32,
   "umbral_interes": 40,
   "stats": {
     "nuevas": 0,
     "actualizadas": 0,
-    "sin_cambios": 9,
-    "descartadas_filtro": 55,
+    "sin_cambios": 7,
+    "descartadas_filtro": 53,
     "nueva": 0,
     "actualizada": 0
   },
@@ -66,30 +66,6 @@
     }
   ],
   "propiedades": [
-    {
-      "id": "0a7e27ea79453ffe",
-      "url": "https://inmobiliariamega.com.ar/propiedades/local-en-alquiler-esquina/",
-      "portal": "inmo:mega",
-      "zona": "Paraná",
-      "titulo": "Local en Alquiler Esquina.",
-      "descripcion": "*Le enviaremos la contraseña por correo electrónico Se ofrece en alquiler un atractivo local comercial en una ubicación privilegiada en la esquina de las calles Perú e Italia, en la ciudad de Paraná, Entre Ríos, Argentina. Esta propiedad se encuentra a tan solo dos cuadras de la concurrida peatonal San Martín, lo que garantiza un flujo constante de potenciales clientes y un excelente posicionamiento comercial.El local cuenta con una superficie de 100 M2, ideal para una variedad de usos comerciales, como ferretería, pinturería o panadería, entre otros. Entre sus características, el local incluye un baño, asegurando comodidad tanto para clientes como para el personal. Además, el lugar es sumamente luminoso, lo que contribuye a un ambiente agradable y acogedor.En cuanto a los servicios, cuenta con agua corriente y cloacas, esenciales para el funcionamiento diario de cualquier negocio. La zona es de fácil acceso y está bien conectada con el resto de la ciudad, lo que facilita el transporte",
-      "direccion": "",
-      "precio": null,
-      "moneda": null,
-      "superficie_m2": 100.0,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 30,
-      "criterios_match": [
-        "esquina",
-        "superficie_ideal"
-      ],
-      "primera_vez_visto": "2026-10-25T16:28:26",
-      "ultima_vez_visto": "2026-10-30T18:08:18",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
     {
       "id": "f312a80cbf47a537",
       "url": "https://www.zonaprop.com.ar/propiedades/clasificado/alcllcin-forum-puerto-norte-local-comercial-110-m-sup2-59839847.html?n_src=Listado&n_pills=Encargado&n_pg=1&n_pos=22",
@@ -269,7 +245,7 @@
         "estacionamiento"
       ],
       "primera_vez_visto": "2026-10-28T18:52:19",
-      "ultima_vez_visto": "2026-10-30T18:27:46",
+      "ultima_vez_visto": "2026-10-31T17:41:45",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -290,14 +266,14 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-09-17T17:12:57",
-      "ultima_vez_visto": "2026-10-30T18:17:22",
+      "ultima_vez_visto": "2026-10-31T17:31:34",
       "estado": "activa",
       "descartada": 0,
       "notas": null
     },
     {
-      "id": "81350e1ac7545e75",
-      "url": "https://inmobiliariamega.com.ar/propiedades?operacion=alquiler&tipo=local",
+      "id": "fa4e4b91abf29494",
+      "url": "https://inmobiliariamega.com.ar/propiedades/page/2/?operacion=alquiler&tipo=local",
       "portal": "inmo:mega",
       "zona": "Paraná",
       "titulo": "Archivos de Blog",
@@ -305,34 +281,13 @@
       "direccion": "",
       "precio": null,
       "moneda": null,
-      "superficie_m2": 92.0,
+      "superficie_m2": null,
       "lat": -31.7319,
       "lon": -60.5238,
       "score": 0,
       "criterios_match": [],
-      "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-10-30T18:08:18",
-      "estado": "activa",
-      "descartada": 0,
-      "notas": null
-    },
-    {
-      "id": "fca7682166d662fc",
-      "url": "https://inmobiliariamega.com.ar/propiedades/?operacion=alquiler&tipo=local",
-      "portal": "inmo:mega",
-      "zona": "Paraná",
-      "titulo": "Archivos de Blog",
-      "descripcion": "*Le enviaremos la contraseña por correo electrónico Bridamos soluciones y asesoramiento inmobiliario adaptado a las medidas de cada cliente. Alquiler y venta de inmuebles. Paraná Echagüe 720, Paraná WhatsApp: 343 5087586",
-      "direccion": "",
-      "precio": null,
-      "moneda": null,
-      "superficie_m2": 92.0,
-      "lat": -31.7319,
-      "lon": -60.5238,
-      "score": 0,
-      "criterios_match": [],
-      "primera_vez_visto": "2026-05-13T18:32:59",
-      "ultima_vez_visto": "2026-10-30T18:08:18",
+      "primera_vez_visto": "2026-08-03T15:23:43",
+      "ultima_vez_visto": "2026-10-31T17:22:27",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -353,7 +308,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-07-23T14:36:03",
-      "ultima_vez_visto": "2026-10-30T18:04:06",
+      "ultima_vez_visto": "2026-10-31T17:18:08",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -374,7 +329,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-08-03T15:19:17",
-      "ultima_vez_visto": "2026-10-30T18:04:06",
+      "ultima_vez_visto": "2026-10-31T17:18:08",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -395,7 +350,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-09-23T17:03:59",
-      "ultima_vez_visto": "2026-10-30T18:04:06",
+      "ultima_vez_visto": "2026-10-31T17:18:08",
       "estado": "activa",
       "descartada": 0,
       "notas": null
@@ -416,7 +371,7 @@
       "score": 0,
       "criterios_match": [],
       "primera_vez_visto": "2026-10-26T18:49:30",
-      "ultima_vez_visto": "2026-10-30T18:04:06",
+      "ultima_vez_visto": "2026-10-31T17:18:08",
       "estado": "activa",
       "descartada": 0,
       "notas": null
